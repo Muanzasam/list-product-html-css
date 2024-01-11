@@ -1,0 +1,83 @@
+
+* {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+  body{
+	font-family: Arial, sans-serif;
+	background-color: #dddddd;
+	color: rgba(0,0,0,1);
+}
+
+/*Formatação da Interface */
+
+div#interface{
+    width: 800px;
+    height: 100%;
+    background-color: #ffffff;
+    margin: -20px auto 0px auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+  ul {
+    list-style: none; /* remove os marcadores padrão */
+  }
+
+  li {
+    display: inline-block; /* alinha os itens horizontalmente */
+    width: 200px; /* define a largura dos itens */
+    height: 300px; /* define a altura dos itens */
+    margin: 10px; /* adiciona espaço entre os itens */
+    border: 1px solid dimgray; /* adiciona borda aos itens */
+    position: relative; /* permite posicionar o conteúdo gerado */
+    padding: 10px;
+  }
+
+  li img {
+    /*  content: url(produto.jpg);  adiciona uma imagem antes do item */
+    display: block; /* faz a imagem ocupar todo o espaço disponível */
+    width: 100%; /* define a largura da imagem */
+    height: 60%; /* define a altura da imagem */
+    text-align: center;
+  }
+
+  li a {
+    /*content: "R$ 99,90";  adiciona um link depois do item */
+    display: block; /*  faz o link ocupar todo o espaço disponível */
+    width: 100%; /* define a largura do link */
+    height: 10%; /* define a altura do link */
+    text-align: center; /* centraliza o texto do link */
+    background-color: dimgrey; /* adiciona uma cor de fundo ao link */
+    color: white; /* adiciona uma cor ao link */
+    /* position: absolute;  posiciona o link em relação ao item */
+    bottom: 4px; /* coloca o link na parte inferior do item */
+    text-decoration: none;
+    padding-top: 5px;
+    font-size: 15px;
+  }
+  li h2 {
+    display: block;
+    font-weight: 500;
+    font-size: 17px;
+  }
+  li p{
+    display: block;
+    width: 100%; /* define a largura do preço*/
+    height: 5%; /* define a altura do preço*/
+    /*background-color: orange;*/
+  }
+  li p  span.antes {
+    color: red;
+    font-weight: bold;
+    text-decoration: line-through;
+    float: left;
+  }
+  li p span.agora {
+    color: darkgreen;
+    font-weight: bold;
+    padding-left: 20%;
+    display: block;
+    float: right;
+  }
